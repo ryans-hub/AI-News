@@ -2,6 +2,9 @@ var apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.
 
 fetch(apiUrl)
     .then(function (response) {
+        if(!response.ok) {
+            throw new Error('HTTP');
+        }
         return response.json();
     })
     .then(function (data){
