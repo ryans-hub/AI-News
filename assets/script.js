@@ -4,8 +4,8 @@
 var apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=6fb29bcb805fb6f924562fe58431eff3'
 
 var cityEntered = document.querySelector('#cityEntered');
-var searchButton = document.querySelector('#searchButton');
-var todaysWeather = document.querySelector('#todaysWeather');
+var searchBtn = document.querySelector('#searchBtn');
+var todayWeather = document.querySelector('#todayWeather');
 
 fetch(apiUrl)
     .then(function (response) {
